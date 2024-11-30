@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Combinado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;}
+        header {
+            background-color: #1f1f1f;
+            padding: 15px;
+            text-align: center;}
+        nav {
+            display: flex;
+            justify-content: center;}
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;}
+        .menu > li {
+            position: relative;}
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .menu a:hover {
+            background-color: #3498db;
+            transform: scale(1.1);
+        }
+
+        .menu li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            min-width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            z-index: 1000;
+        }
+
+        .menu li:hover > ul {
+            display: block;
+        }
+
+        .menu li ul li {
+            display: block;
+        }
+
+        .menu li ul li a {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 0;
+        }
+
+        .menu li ul li a:hover {
+            background-color: #3498db;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href='organizador.html'>Inicio</a></li>
+            <li><a href="#services">Servicios</a>
+            <ul>
+                <li><a href="modalidad.html">Modalidad</a></li>
+                <li><a href="">Apoyo emocional</a></li>
+            </ul>
+            </li>
+            <li><a href="">Acerca de</a>
+            <ul>
+                <li><a href="Acerca de.html">Nuestra misión y visión</a></li>
+            </ul>
+            </li>
+            <li>
+                <a href="#portfolio">Portafolio</a>
+                <ul>
+                    <li><a href="Portafolio.html">Especialistas</a></li>
+                </ul>
+            </li>
+            <li><a href="">Contacto</a>
+                <ul>
+                    <li><a href="CONSULTA.html">Formulario de registro</a></li>
+            </ul></li>
+        </ul>
+    </nav>
+</header>
+        <h1><b>MISIÓN</b></h1>
+        <p>"Nuestra misión es proporcionar productos curanderos naturales y efectivos que mejoren <br>
+            la salud y bienestar de nuestros clientes, mientras promovemos una cultura de vida saludable<br> y sostenible.
+             Nos comprometemos a ofrecer servicios personalizados,
+             consejos expertos y productos <br>
+             de alta calidad, garantizando la satisfacción y confianza de nuestros clientes."
+        </p>
+        <h1><b>VISIÓN</b></h1>
+        <p>"Ser líderes en el mercado de productos curanderos naturales, reconocidos por nuestra <br>
+            excelencia en la calidad, innovación y compromiso con la salud y bienestar de nuestras comunidades.<br>
+             Queremos ser el destino preferido para aquellos que buscan soluciones naturales y efectivas para mejorar <br>
+             su calidad de vida, y ser un modelo de sostenibilidad y responsabilidad social en nuestro sector."</p>
+             <ul>
+    </body>
+
+</html>
